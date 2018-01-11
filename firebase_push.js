@@ -45,7 +45,7 @@ function addNewTransaction(id, attr, newTransaction){
         updateUserData(id, results)
     })
 }
-
+/*
 writeUserData('1839402344', {
     "Starbucks":{
         "2017-29-09-08:15": 12,
@@ -76,3 +76,4 @@ addNewTransaction('1839402344', 'Sotre', {
     "2017-29-09-08:15": 4,
     "2018-19-01-12:34": 61
 })
+*/
