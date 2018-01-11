@@ -22,6 +22,7 @@
   "dependencies": {
     "bulma": "^0.6.2",
     "express": "*",
+    "firebase-admin": "^5.7.0",
     "http-server": "^0.10.0",
     "jquery": "^3.2.1",
     "jquery.easing": "^1.4.1",
