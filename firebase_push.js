@@ -15,39 +15,64 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 function writeUserData(id, transactions) {
-    firebase.database().ref('users/' + id).set({
-        transactions: transactions
-    });
+    firebase.database().ref('users/' + id).set(transactions);
 }
 
 // returns a Promise
 function readUserData(id){
     return firebase.database().ref('/users/' + id).once('value').then(function(snapshot) {
-        var transactions = snapshot.val().transactions;
+        var transactions = snapshot.val();
         return transactions
     });
 }
 
 function updateUserData(id, newTransactions){
     let update = {}
-    update['/users/' + id] = {
-        transactions: newTransactions
-    }
+    update['/users/' + id] = newTransactions
     firebase.database().ref().update(update);
 }
 
-function addNewTransaction(id, newTransaction){
+function deleteUserData(id){
+    let update = {}
+    update['/users/' + id] = null
+    firebase.database().ref().update(update);
+}
+
+function addNewTransaction(id, attr, newTransaction){
     readUserData(id).then(function(results){
         console.log(results)
-        results.push(newTransaction)
+        results[attr] = newTransaction
         updateUserData(id, results)
     })
 }
 
-/*
-writeUserData(0, {
-    0: "Purchase0 stuff",
-    1: "Purchase1 stuff"
+writeUserData('1839402344', {
+    "Starbucks":{
+        "2017-29-09-08:15": 12,
+        "2018-19-01-12:34": 86
+    },
+    "Panera": {
+        "2017-29-09-08:15": 13,
+        "2018-19-01-12:34": 67
+    }
 })
-*/
-addNewTransaction(0, "Purchase7 stuff")
+
+updateUserData('1839402344', {
+    "Giant":{
+        "2017-29-09-08:15": 42,
+        "2018-19-01-12:34": 23
+    },
+    "Pharmacy": {
+        "2017-29-09-08:15": 4,
+        "2018-19-01-12:34": 61
+    }
+})
+
+readUserData('1839402344').then(function(results){
+    console.log(results)
+})
+
+addNewTransaction('1839402344', 'Sotre', {
+    "2017-29-09-08:15": 4,
+    "2018-19-01-12:34": 61
+})
