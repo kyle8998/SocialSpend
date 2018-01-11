@@ -6505,9 +6505,7 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 .map-panel {
-  background-color: green;
-  height: 1800px; }
+  background-color: grey; }
 
 .info-panel {
-  background-color: black;
-  height: 1800px; }
+  background-color: black; }
