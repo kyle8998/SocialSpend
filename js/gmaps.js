@@ -7,7 +7,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
  * This constructor takes the control DIV as an argument.
  * @constructor
  */
- var map, infoWindow;
+ var map, infoWindow, longitude, latitude;
 
        function initMap() {
          map = new google.maps.Map(document.getElementById('map'), {
@@ -29,6 +29,10 @@ var sf = {lat: 37.7749, lng: -122.4194};
              // infoWindow.open(map);
              map.setCenter(pos);
              createMarker(pos["lat"], pos["lng"]);
+
+             for (int i = 0; i < 10; i++) {
+               locations[i] = createMarker(pos["lat"]+i, pos["lng"]+i);
+             }
            }, function() {
              handleLocationError(true, infoWindow, map.getCenter());
            });
@@ -38,8 +42,15 @@ var sf = {lat: 37.7749, lng: -122.4194};
            handleLocationError(false, infoWindow, map.getCenter());
          }
 
+         marker.addListener('click', function() {
+          map.setZoom(8);
+          map.setCenter(marker.getPosition());
+        });
+
 
        }
+
+
 
        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
          infoWindow.setPosition(pos);
