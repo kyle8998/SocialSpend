@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>social spend</title> 
+    <title>social spend</title>
 
     <!--for scaling across various devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Set the color for the URL bar on Chrome on Android phones/tablets-->
     <meta name="theme-color" content="#22313F">
@@ -21,8 +21,15 @@
 
     <div class="columns">
         <div class="column is-three-quarters map-panel">
-          Map Panel
+            <!-- <section class="hero is-success is-fullheight">
+              <div class="hero-body">
+                <div class="container"> -->
+                    <section style="height: 40em" id="map"></section>
+                <!-- </div>
+              </div>
+            </section> -->
         </div>
+
         <div class="column info-panel">
           Info Panel
         </div>
@@ -30,3 +37,8 @@
 
 </body>
 </html>
+
+<script src="js/gmaps.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFW1D1pXRv2vC52u-bGJ3IydUM_-DepUE&callback=initMap">
+</script>
