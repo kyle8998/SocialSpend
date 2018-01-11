@@ -8,4 +8,7 @@ target 'Places' do
   # Pods for Places
 
 pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
+
 end
