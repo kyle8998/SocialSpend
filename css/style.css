@@ -1,0 +1,28 @@
+.info-panel {
+	background-color: #0FFFB4;
+	padding: 0.01%;
+}
+
+.map-section {
+	background-color: #0EE5A2;
+	padding: 0.01%;
+}
+
+.info-panel-overview {
+	background-color: #0BBF87;
+	padding: 5%;
+	margin: 3% auto;
+	width: 90%;
+	height: 30%;
+}
+
+
+.img-fluid {
+	width: 100%; 
+}
+
+.info-panel-description {
+	text-align: left;
+	padding: 1%;
+}
+
