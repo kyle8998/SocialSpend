@@ -132,6 +132,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
 
                      infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.num_people + " Friends were here recently!</div>");
                      infoWindow.open(map, marker);
+                     
+                     document.getElementById('place-title').innerHTML = markers[i]['title'];
 
                  });
              })(marker, data);
