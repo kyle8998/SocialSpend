@@ -9,6 +9,39 @@ var sf = {lat: 37.7749, lng: -122.4194};
  */
  var map, infoWindow, longitude, latitude;
 
+ var markers = [
+    {
+        "title": 'CIRCA',
+        "lat": 38.8870,
+        "lng": -77.0944,
+        "description": 'Aksa Beach is a popular beach and a vacation spot in Aksa village at Malad, Mumbai.'
+    },
+    {
+        "title": 'Giant Foods',
+        "lat": 38.8856536,
+        "lng": -77.10297880000002,
+        "description": 'Juhu Beach is one of favourite tourist attractions situated in Mumbai.'
+    },
+    {
+        "title": 'Lyon Hall',
+        "lat": 38.8853862,
+        "lng": -77.09520709999998,
+        "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
+    },
+    {
+        "title": 'Green Pig Bistro',
+        "lat": 38.8856541,
+        "lng": -77.09261170000002,
+        "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
+    },
+    {
+        "title": 'The Cheesecake Factory',
+        "lat": 38.8879346,
+        "lng": -77.09348239999997,
+        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+    }
+    ];
+
        function initMap() {
          map = new google.maps.Map(document.getElementById('map'), {
            center: {lat: -34.397, lng: 150.644},
@@ -28,11 +61,28 @@ var sf = {lat: 37.7749, lng: -122.4194};
              // infoWindow.setContent('Location found.');
              // infoWindow.open(map);
              map.setCenter(pos);
+             /*
              createMarker(pos["lat"], pos["lng"]);
+*/
+             for (var i = 0; i < markers.length; i++) {
+               var data = markers[i];
 
-             for (int i = 0; i < 10; i++) {
-               locations[i] = createMarker(pos["lat"]+i, pos["lng"]+i);
-             }
+               createMarker(markers[i].lat, markers[i].lng);
+               console.log(markers[i].lat);
+               console.log(markers[i].lng);
+
+             //Attach click event to the marker.
+             (function (marker, data) {
+                 google.maps.event.addListener(marker, "click", function (e) {
+                     //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+
+                     infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                     infoWindow.open(map, marker);
+
+                 });
+             })(marker, data);
+         }
+
            }, function() {
              handleLocationError(true, infoWindow, map.getCenter());
            });
@@ -42,10 +92,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
            handleLocationError(false, infoWindow, map.getCenter());
          }
 
-         marker.addListener('click', function() {
-          map.setZoom(8);
-          map.setCenter(marker.getPosition());
-        });
+
 
 
        }
@@ -69,6 +116,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
            });
        }
 
+/*
        function initAutocomplete() {
          var map = new google.maps.Map(document.getElementById('map'), {
            center: {lat: -33.8688, lng: 151.2195},
@@ -135,3 +183,5 @@ var sf = {lat: 37.7749, lng: -122.4194};
            map.fitBounds(bounds);
          });
        }
+
+      */
