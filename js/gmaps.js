@@ -14,6 +14,9 @@ var sf = {lat: 37.7749, lng: -122.4194};
  var markers = [
     {
         "title": 'CIRCA',
+        "address": "",
+        "phone": "+1 301-483-3448",
+        "website": "http://circa.com",
         "lat": 38.8870,
         "lng": -77.0944,
         "place_id": "ChIJVz9MKIS2t4kRoYbQXABqYzQ",
@@ -22,6 +25,9 @@ var sf = {lat: 37.7749, lng: -122.4194};
     },
     {
         "title": 'Giant Food',
+        "address": "",
+        "phone": "+1 301-484-0380",
+        "website": "http://giantfood.com",
         "lat": 38.8856536,
         "lng": -77.10297880000002,
         "place_id": "ChIJmXMR0ym0t4kRNT_fHDYv6xg",
@@ -30,6 +36,9 @@ var sf = {lat: 37.7749, lng: -122.4194};
     },
     {
         "title": 'Lyon Hall',
+        "address": "",
+        "phone": "+1 307-480-3029",
+        "website": "http://lyonhall.com",
         "lat": 38.8853862,
         "lng": -77.09520709999998,
         "place_id": "ChIJG_qeQIS2t4kRtvKx8qLclBs",
@@ -38,6 +47,9 @@ var sf = {lat: 37.7749, lng: -122.4194};
     },
     {
         "title": 'Green Pig Bistro',
+        "address": "",
+        "phone": "+1 284-250-0472",
+        "website": "http://greenpigbistro.com",
         "lat": 38.8856541,
         "lng": -77.09261170000002,
         "place_id": "ChIJi8J3wIW2t4kR8hSSyF7i6xE",
@@ -46,6 +58,9 @@ var sf = {lat: 37.7749, lng: -122.4194};
     },
     {
         "title": 'The Cheesecake Factory',
+        "address": "",
+        "phone": "+1 390-349-2759",
+        "website": "http://cheesecakes.com",
         "lat": 38.8879346,
         "lng": -77.09348239999997,
         "place_id": "EiVXaWxzb24gQmx2ZCwgQXJsaW5ndG9uLCBWQSAyMjIwMSwgVVNB",
@@ -54,6 +69,9 @@ var sf = {lat: 37.7749, lng: -122.4194};
     },
     {
         "title": 'Whole Food Markets',
+        "address": "",
+        "phone": "+1 307-502-5428",
+        "website": "http://foodmarkets.com",
         "lat": 38.88924,
         "lng": -77.09089599999999,
         "place_id": "ChIJYXu_IIa2t4kRuU7OdddDn3Q",
@@ -62,6 +80,9 @@ var sf = {lat: 37.7749, lng: -122.4194};
     },
     {
         "title": 'The Container Store',
+        "address": "",
+        "phone": "+1 240-429-0582",
+        "website": "http://containerstore.com",
         "lat": 38.8875227,
         "lng": -77.09207229999998,
         "place_id": " ChIJYTziboa2t4kRUE7mZOR1bEo",
@@ -70,6 +91,9 @@ var sf = {lat: 37.7749, lng: -122.4194};
     },
     {
         "title": 'Mr Tire Auto Service Centers',
+        "address": "",
+        "phone": "+1 502-104-5038",
+        "website": "http://tireautoservice.com",
         "lat": 38.8960347,
         "lng": -77.13244750000001,
         "place_id": "ChIJ48ZQt0y0t4kRFzUGTP-yH34",
@@ -78,6 +102,9 @@ var sf = {lat: 37.7749, lng: -122.4194};
     },
     {
         "title": 'Arlington Rooftop Bar & Grill',
+        "address": "",
+        "phone": "+1 504-294-2954",
+        "website": "http://rooftopbargrill.com",
         "lat": 38.8902773,
         "lng": -77.0881602,
         "place_id": "ChIJR-yfSoi2t4kRasSlSd4RHho",
@@ -86,6 +113,9 @@ var sf = {lat: 37.7749, lng: -122.4194};
     },
     {
         "title": 'Cava Mezze Clarendon',
+        "address": "",
+        "phone": "+1 301-384-2604",
+        "website": "http://circa.com",
         "lat": 38.8902773,
         "lng": -77.0881602,
         "place_id": 'ChIJ5Y-6fYa2t4kRPcvWjkDJoTU',
@@ -132,8 +162,16 @@ var sf = {lat: 37.7749, lng: -122.4194};
 
                      infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.num_people + " Friends were here recently!</div>");
                      infoWindow.open(map, marker);
-                     
-                     document.getElementById('place-title').innerHTML = markers[i]['title'];
+                  
+
+                    function setInfoPanelForMarker(data){
+                      document.getElementById('place-title').innerHTML = data['title']
+                      document.getElementById('place-subtitle').innerHTML = data['description']
+                      document.getElementById('place-address').innerHTML = data['address']
+                      document.getElementById('place-phone').innerHTML = data['phone']
+                      document.getElementById('place-website').innerHTML = data['website']
+                      document.getElementById('place-num-of-friends').innerHTML = data['num_people'] 
+                    }
 
                  });
              })(marker, data);
