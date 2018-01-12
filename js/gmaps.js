@@ -44,7 +44,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": "ChIJG_qeQIS2t4kRtvKx8qLclBs",
         "num_people": 3,
         "images": "<nav class=\"level\"><img src=\"images/amy.jpg\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/max.jpg\" class=\"pal-headshot\">",
-        "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
+        "description": 'Trendy French-German brasserie offering a meat-heavy menu & a unique beer selection.'
     },
     {
         "title": 'Green Pig Bistro',
@@ -56,7 +56,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": "ChIJi8J3wIW2t4kR8hSSyF7i6xE",
         "num_people": 1,
         "images": "<nav class=\"level\"><img src=\"images/anon.jpg\" class=\"pal-headshot\">",
-        "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
+        "description": 'Scot Harlans nose-to-tail ethos turns out American-French dishes in a modern, kitschy spot.'
     },
     {
         "title": 'The Cheesecake Factory',
@@ -67,7 +67,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.09348239999997,
         "place_id": "EiVXaWxzb24gQmx2ZCwgQXJsaW5ndG9uLCBWQSAyMjIwMSwgVVNB",
         "num_people": 0,
-        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+        "description": 'Rotating menu of seasonal American dishes alongside international wines in an upscale setting.'
     },
     {
         "title": 'Whole Food Markets',
@@ -79,7 +79,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": "ChIJYXu_IIa2t4kRuU7OdddDn3Q",
         "num_people": 2,
         "images": "<nav class=\"level\"><img src=\"images/omkar.png\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/max.jpg\" class=\"pal-headshot\">",
-        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+        "description": 'Eco-minded chain with natural & organic grocery items, housewares & other products (most sell wine).'
     },
     {
         "title": 'The Container Store',
@@ -91,7 +91,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": " ChIJYTziboa2t4kRUE7mZOR1bEo",
         "num_people": 2,
         "images": "<nav class=\"level\"><img src=\"images/qt.jpg\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/omkar.png\" class=\"pal-headshot\">",
-        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+        "description": 'Chain retailer specializing in storage & organization supplies, including closet & shelving systems.'
     },
     {
         "title": 'Mr Tire Auto Service Centers',
@@ -102,7 +102,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.13244750000001,
         "place_id": "ChIJ48ZQt0y0t4kRFzUGTP-yH34",
         "num_people": 0,
-        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+        "description": 'Great autoservices for your car'
     },
     {
         "title": 'Arlington Rooftop Bar & Grill',
@@ -113,7 +113,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.0881602,
         "place_id": "ChIJR-yfSoi2t4kRasSlSd4RHho",
         "num_people": 0,
-        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+        "description": 'Sprawling bar & grill with an upscale pub menu, signature cocktails, TV sports & live music.'
     },
     {
         "title": 'Cava Mezze Clarendon',
@@ -125,7 +125,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": 'ChIJ5Y-6fYa2t4kRPcvWjkDJoTU',
         "num_people": 3,
         "images": "<nav class=\"level\"><img src=\"images/amy.jpg\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/anon.jpg\" class=\"pal-headshot\">",
-        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+        "description": 'Mini-chain branch for tapas-style Greek dining, serving up classic eats in an industrial setting.'
     },
 
 
