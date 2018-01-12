@@ -4,22 +4,17 @@ module.exports.dummy_data =
         name: "Kyle_Lim",    
         transactions: [
             {
-                store: "Starbucks",
+                store: "Mr Tire Auto Service",
                 amount: 12.72,
                 time: "2018-08-11 08:15:24" 
             },
             {
-                store: "Starbucks",
+                store: "CIRCA at Clarendon",
                 amount: 8.43,
                 time: "2017-12-24 12:24:29" 
             },
             {
-                store: "Panera",
-                amount: 5.74,
-                time: "2017-11-13 16:52:34"
-            },
-            {
-                store: "The Container Store",
+                store: "The Liberty Tavern",
                 amount: 98.28,
                 time: "2017-06-17 18:29:52"
             }
@@ -29,7 +24,7 @@ module.exports.dummy_data =
         name: "Amy_Zhao",
         transactions: [
             {
-                store: "Pizza Hut",
+                store: "YMCA Arlington",
                 amount: 13.79,
                 time: "2018-01-04 10:05:07"
             },
@@ -54,7 +49,7 @@ module.exports.dummy_data =
         name: "Max_Newman",
         transactions: [
             {
-                store: "Panera",
+                store: "TD Bank",
                 amount: 14.61,
                 time: "2018-01-08" 
             },
@@ -84,14 +79,19 @@ module.exports.dummy_data =
         name: "Omkar_Konaraddi",
         transactions: [
             {
-                store: "Whole Food Markets",
+                store: "Whole Foods Markets",
                 amount: 40.18,
                 time: "2018-01-04"
             },
             {
-                store: "The Container Store",
+                store: "Origins The Market Common",
                 amount: 58.19,
                 time: "2018-01-02"
+            },
+            {
+                store: "The Cheesecake Factory",
+                amount: 60.00,
+                time: "2018-01-01"
             }
         ]
     },
@@ -119,7 +119,7 @@ module.exports.dummy_data =
                 time: "2018-01-02"
             },
             {
-                store: "Pizza Hut",
+                store: "Artisan Confections",
                 amount: 14.57,
                 time: "2018-01-01"
             }
