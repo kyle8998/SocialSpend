@@ -60,5 +60,6 @@ const url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=" +
 //     }else{
 //         let result = JSON.parse(body)
 //         console.log(result)
+//         document.getElementById('place-title').innerHTML = result["result"]["name"]
 //     }
 // })
