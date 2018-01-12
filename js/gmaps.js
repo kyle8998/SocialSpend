@@ -163,7 +163,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
                      infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.num_people + " Friends were here recently!</div>");
                      infoWindow.open(map, marker);
 
-
+                     console.log("hello");
+                     setInfoPanelForMarker(data);
                     function setInfoPanelForMarker(data){
                       document.getElementById('place-title').innerHTML = data['title']
                       document.getElementById('place-subtitle').innerHTML = data['description']
