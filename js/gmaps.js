@@ -43,6 +43,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.09520709999998,
         "place_id": "ChIJG_qeQIS2t4kRtvKx8qLclBs",
         "num_people": 3,
+        "images": "<nav class=\"level\"><img src=\"images/amy.jpg\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/max.jpg\" class=\"pal-headshot\">",
         "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
     },
     {
@@ -54,6 +55,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.09261170000002,
         "place_id": "ChIJi8J3wIW2t4kR8hSSyF7i6xE",
         "num_people": 1,
+        "images": "<nav class=\"level\"><img src=\"images/anon.jpg\" class=\"pal-headshot\">",
         "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
     },
     {
@@ -76,6 +78,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.09089599999999,
         "place_id": "ChIJYXu_IIa2t4kRuU7OdddDn3Q",
         "num_people": 2,
+        "images": "<nav class=\"level\"><img src=\"images/omkar.png\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/max.jpg\" class=\"pal-headshot\">",
         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
     },
     {
@@ -87,6 +90,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.09207229999998,
         "place_id": " ChIJYTziboa2t4kRUE7mZOR1bEo",
         "num_people": 2,
+        "images": "<nav class=\"level\"><img src=\"images/qt.jpg\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/omkar.png\" class=\"pal-headshot\">",
         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
     },
     {
@@ -120,6 +124,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.0881602,
         "place_id": 'ChIJ5Y-6fYa2t4kRPcvWjkDJoTU',
         "num_people": 3,
+        "images": "<nav class=\"level\"><img src=\"images/amy.jpg\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/anon.jpg\" class=\"pal-headshot\">",
         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
     },
 
@@ -159,8 +164,12 @@ var sf = {lat: 37.7749, lng: -122.4194};
              (function (marker, data) {
                  google.maps.event.addListener(marker, "click", function (e) {
                      //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
-
-                     infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.num_people + " Friends were here recently!</div>");
+                     if (data.num_people > 0){
+                         infoWindow.setContent("<div style = 'width:200px;min-height:40px'><b>" + data.num_people + " Friends were here recently!</b> " + data.images);
+                     }
+                     else {
+                         infoWindow.setContent("<div style = 'width:200px;min-height:40px'><b>" + " No friends here :(</b> ");
+                     }
                      infoWindow.open(map, marker);
 
                      console.log("hello");
