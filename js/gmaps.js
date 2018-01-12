@@ -133,8 +133,8 @@ var data = '{"places":[' +
 
 obj = JSON.parse(data);
 
-document.getElementById("demo").innerHTML =
-obj.places[0].title + " " + obj.places[0].description;
+// document.getElementById("demo").innerHTML =
+// obj.places[0].title + " " + obj.places[0].description;
 
 
 for (var element in obj.places) {
@@ -143,13 +143,29 @@ for (var element in obj.places) {
        var description =  obj.places[element].description;
        var badge = document.createElement('div');
 
-        
-        badge.className = 'badge';
-        badge.innerHTML =
-            '<p>' + title + '</p>' +
-            '<p>' + description + '</p>' +
-            '<div class="options-only-phone">';
+        // badge.className = 'badge';
+        // badge.innerHTML =
+        //     '<p>' + title + '</p>' +
+        //     '<p>' + description + '</p>';
+
+        badge.innerHTML = 
+         '<div class="info-panel-overview">' +
+                     '<div class="row">' +
+                      ' <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div>'
+                        ' <div class="col-sm-8"> <p>' +
+                            title + '</p>  <p>' + description + '<p>'
+
+                     +  '</p> </div>' +
+                   ' </div>' +
+                 '</div>';
+
+
+         badge.innerHTML =
+             '<div class="info-panel-overview"> <div class="row"> <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div> <div class="col-sm-8"> <p>' + title + ' ' + description + '</div></div></div>';
+
+
         //I gave the div the same ID's as the keys in the object for ease
+
         document.getElementById("element").appendChild(badge);
     
 }
