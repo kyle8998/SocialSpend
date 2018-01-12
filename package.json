@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "description": "See what your friends are buying",
   "scripts": {
-    "test": "echo 'npm test' worked",
-    "start": "node_modules/.bin/http-server . -c-1 -p 8000",
     "sass": "node_modules/.bin/node-sass styles.scss styles.min.css",
     "sass-live": "node_modules/.bin/node-sass --watch styles.scss styles.min.css",
     "browserify": "node_modules/.bin/browserify ./js/gmaps.js -o gmaps_browser.js"
