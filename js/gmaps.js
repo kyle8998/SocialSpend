@@ -14,32 +14,74 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "title": 'CIRCA',
         "lat": 38.8870,
         "lng": -77.0944,
+        "place_id": "ChIJVz9MKIS2t4kRoYbQXABqYzQ",
         "description": 'Aksa Beach is a popular beach and a vacation spot in Aksa village at Malad, Mumbai.'
     },
     {
         "title": 'Giant Foods',
         "lat": 38.8856536,
         "lng": -77.10297880000002,
+        "place_id": "ChIJmXMR0ym0t4kRNT_fHDYv6xg",
         "description": 'Juhu Beach is one of favourite tourist attractions situated in Mumbai.'
     },
     {
         "title": 'Lyon Hall',
         "lat": 38.8853862,
         "lng": -77.09520709999998,
+        "place_id": "ChIJG_qeQIS2t4kRtvKx8qLclBs",
         "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
     },
     {
         "title": 'Green Pig Bistro',
         "lat": 38.8856541,
         "lng": -77.09261170000002,
+        "place_id": "ChIJi8J3wIW2t4kR8hSSyF7i6xE",
         "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
     },
     {
         "title": 'The Cheesecake Factory',
         "lat": 38.8879346,
         "lng": -77.09348239999997,
+        "place_id": "EiVXaWxzb24gQmx2ZCwgQXJsaW5ndG9uLCBWQSAyMjIwMSwgVVNB",
         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
-    }
+    },
+    {
+        "title": 'Whole Food Markets',
+        "lat": 38.8879346,
+        "lng": -77.09348239999997,
+        "place_id": "EiVXaWxzb24gQmx2ZCwgQXJsaW5ndG9uLCBWQSAyMjIwMSwgVVNB",
+        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+    },
+    {
+        "title": 'The Container Store',
+        "lat": 38.8875227,
+        "lng": -77.09207229999998,
+        "place_id": " ChIJYTziboa2t4kRUE7mZOR1bEo",
+        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+    },
+    {
+        "title": 'Mr Tire Auto Service Centers',
+        "lat": 38.8960347,
+        "lng": -77.13244750000001,
+        "place_id": "ChIJ48ZQt0y0t4kRFzUGTP-yH34",
+        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+    },
+    {
+        "title": 'Arlington Rooftop Bar & Grill',
+        "lat": 38.8902773,
+        "lng": -77.0881602,
+        "place_id": "ChIJR-yfSoi2t4kRasSlSd4RHho",
+        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+    },
+    {
+        "title": 'Cava Mezze Clarendon',
+        "lat": 38.8902773,
+        "lng": -77.0881602,
+        "place_id": 'ChIJ5Y-6fYa2t4kRPcvWjkDJoTU',
+        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+    },
+
+
     ];
 
        function initMap() {
