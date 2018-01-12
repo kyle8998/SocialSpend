@@ -60,5 +60,6 @@ request.get(url, (err, res, body) => {
     }else{
         let result = JSON.parse(body)
         console.log(result)
+        document.getElementById('place-title').innerHTML = result["result"]["name"]
     }
 })
