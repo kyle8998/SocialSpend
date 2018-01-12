@@ -32,6 +32,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.10297880000002,
         "place_id": "ChIJmXMR0ym0t4kRNT_fHDYv6xg",
         "num_people": 2,
+        "images": "<nav class=\"level\"><img src=\"images/max.jpg\" class=\"pal-headshot\">",
         "description": 'American supermarket chain with 169 stores and 159 full service pharmacies located in Delaware, Maryland, Pennsylvania, Virginia, and Washington, D.C'
     },
     {
