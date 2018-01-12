@@ -126,47 +126,46 @@ var sf = {lat: 37.7749, lng: -122.4194};
        }
 
 
-var data = '{"places":[' +
-'{"title":"Starbucks","description":"Get your coffee" },' +
-'{"title":"Dunkin Donuts","description":"Get your Donuts" },' +
-'{"title":"Samantha Perfumes","description":"Perfume samples for free everyday!" }]}';
-
-obj = JSON.parse(data);
-
-// document.getElementById("demo").innerHTML =
-// obj.places[0].title + " " + obj.places[0].description;
 
 
-for (var element in obj.places) {
+
+
+
+//Here was working
+
+// var data = '{"places":[' +
+// '{"title":"Starbucks","description":"Get your coffee" },' +
+// '{"title":"Dunkin Donuts","description":"Get your Donuts" },' +
+// '{"title":"Samantha Perfumes","description":"Perfume samples for free everyday!" }]}';
+
+// obj = JSON.parse(data);
+
+
+// for (var element in obj.places) {
    
-       var title = obj.places[element].title;
-       var description =  obj.places[element].description;
-       var badge = document.createElement('div');
+//        var title = obj.places[element].title;
+//        var description =  obj.places[element].description;
+//        var badge = document.createElement('div');
 
-        // badge.className = 'badge';
-        // badge.innerHTML =
-        //     '<p>' + title + '</p>' +
-        //     '<p>' + description + '</p>';
+//         badge.innerHTML = 
+//          '<div class="info-panel-overview">' +
+//                      '<div class="row">' +
+//                       ' <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div>'
+//                         ' <div class="col-sm-8"> <p>' +
+//                             title + '</p>  <p>' + description + '<p>'
 
-        badge.innerHTML = 
-         '<div class="info-panel-overview">' +
-                     '<div class="row">' +
-                      ' <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div>'
-                        ' <div class="col-sm-8"> <p>' +
-                            title + '</p>  <p>' + description + '<p>'
-
-                     +  '</p> </div>' +
-                   ' </div>' +
-                 '</div>';
+//                      +  '</p> </div>' +
+//                    ' </div>' +
+//                  '</div>';
 
 
-         badge.innerHTML =
-             '<div class="info-panel-overview"> <div class="row"> <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div> <div class="col-sm-8"> <p>' + title + ' ' + description + '</div></div></div>';
+//          badge.innerHTML =
+//              '<div class="info-panel-overview"> <div class="row"> <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div> <div class="col-sm-8"> <p>' + title + ' ' + description + '</div></div></div>';
 
 
-        //I gave the div the same ID's as the keys in the object for ease
+//         //I gave the div the same ID's as the keys in the object for ease
 
-        document.getElementById("element").appendChild(badge);
+//         document.getElementById("element").appendChild(badge);
     
 }
 
