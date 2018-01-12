@@ -19,33 +19,40 @@ function writeUserData(transactions) {
 }
 
 // returns a Promise
-function readUserData(id){
-    return firebase.database().ref('/users/' + id).once('value').then(function(snapshot) {
-        var transactions = snapshot.val();
-        return transactions
+function readUserData(index){
+    return firebase.database().ref('/users').once('value').then(function(snapshot) {
+        var users = snapshot.val();
+        return users[index]
     });
 }
 
-function updateUserData(id, newTransactions){
+function updateUserData(index, newTransactions){
     let update = {}
-    update['/users/' + id] = newTransactions
+    update['/users/'+index] = newTransactions
     firebase.database().ref().update(update);
 }
 
-function deleteUserData(id){
+function deleteUserData(index){
     let update = {}
-    update['/users/' + id] = null
+    update['/users/' + index] = null
     firebase.database().ref().update(update);
 }
 
-function addNewTransaction(id, attr, newTransaction){
-    readUserData(id).then(function(results){
-        console.log(results)
-        results[attr] = newTransaction
-        updateUserData(id, results)
+function addNewTransaction(index, newTransaction){
+    readUserData(index).then(function(results){
+        results['transactions'].unshift(newTransaction)
+        updateUserData(index, results)
     })
 }
 
 // put dummy data on firebase
 const dummy_data = require('./dummy_data.js').dummy_data
 writeUserData(dummy_data)
+//deleteUserData(1)
+/*
+addNewTransaction(1, {
+    store: "Starbucks",
+    amount: 18.52,
+    time: "2018-01-12"
+})
+*/
