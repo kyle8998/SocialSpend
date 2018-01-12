@@ -1,0 +1,25 @@
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "node_modules/bulma/sass/utilities/functions";
+// customize variables and stuff here
+@import "node_modules/bulma/bulma";
+
+.columns.is-gapless:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.map-panel{
+    .hero-body{
+        padding: 0;
+    }
+}
+
+#map{
+    height: 98%; 
+    width: 100%;
+}
+
+.pal-headshot{
+    border-radius: 50%;
+    @extend .image;
+    @extend .is-64x64;
+}

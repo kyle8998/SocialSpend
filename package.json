@@ -5,9 +5,8 @@
   "description": "See what your friends are buying",
   "scripts": {
     "test": "echo 'npm test' worked",
-    "start": "node_modules/.bin/http-server . -c-1 -p 8000",
-    "sass": "node_modules/.bin/node-sass styles.scss styles.min.css",
-    "sass-live": "node_modules/.bin/node-sass --watch styles.scss styles.min.css"
+    "start": "node server",
+    "sass": "node_modules/.bin/node-sass styles.scss styles.css"
   },
   "keywords": [
     "social",
