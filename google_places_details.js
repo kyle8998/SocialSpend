@@ -1,7 +1,7 @@
 const request = require('request')
 
 const apiKey = "AIzaSyB6P2_7QIdwiDtTnX7_BTjAEbXI8nEfGTU"
-const placeId = "ChIJmXMR0ym0t4kRNT_fHDYv6xg" 
+const placeId = "ChIJ5Y-6fYa2t4kRPcvWjkDJoTU" 
 const url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=" + placeId + "&key=" + apiKey
 
 request.get(url, (err, res, body) => {

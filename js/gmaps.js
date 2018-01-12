@@ -34,7 +34,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": "ChIJmXMR0ym0t4kRNT_fHDYv6xg",
         "num_people": 2,
         "images": "<nav class=\"level\"><img src=\"images/max.jpg\" class=\"pal-headshot\">",
-        "description": 'American supermarket chain with 169 stores and 159 full service pharmacies located in Delaware, Maryland, Pennsylvania, Virginia, and Washington, D.C'
+        "description": 'American supermarket chain with 169 stores and 159 full service pharmacies located in Delaware, Maryland, Pennsylvania, Virginia, and Washington, D.C',
+        "review":"My wife and I just enjoyed dinner at Giant Food with out of town family. Our 5:30pm reservation allowed us to soak up therustic-chic atmosphere as the restaurant came to life for the evening. Our server was attentive and pleasant."
     },
     {
         "title": 'Lyon Hall',
@@ -46,7 +47,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": "ChIJG_qeQIS2t4kRtvKx8qLclBs",
         "num_people": 3,
         "images": "<nav class=\"level\"><img src=\"images/amy.jpg\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/max.jpg\" class=\"pal-headshot\">",
-        "description": 'Trendy French-German brasserie offering a meat-heavy menu & a unique beer selection.'
+        "description": 'Trendy French-German brasserie offering a meat-heavy menu & a unique beer selection.',
+        "review": "Fantastic fine dining with an ever-changing menu. Upscale cocktails and inventive starters are the stars of the dining experience. Sharing dishes is recommended, as are reservations. Dessert does not disappoint, although it does add up on the final bill; expect to shell out $75-$100 per person for a full meal with drinks."
     },
     {
         "title": 'Green Pig Bistro',
@@ -58,7 +60,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": "ChIJi8J3wIW2t4kR8hSSyF7i6xE",
         "num_people": 1,
         "images": "<nav class=\"level\"><img src=\"images/anon.jpg\" class=\"pal-headshot\">",
-        "description": 'Scot Harlans nose-to-tail ethos turns out American-French dishes in a modern, kitschy spot.'
+        "description": 'Scot Harlans nose-to-tail ethos turns out American-French dishes in a modern, kitschy spot.',
+        "review": "First time there and the food was some of the best we’ve had since moving to the area! Very flavorful! Our waitress was awesome. Will def be back."
     },
     {
         "title": 'The Cheesecake Factory',
@@ -69,7 +72,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.09348239999997,
         "place_id": "EiVXaWxzb24gQmx2ZCwgQXJsaW5ndG9uLCBWQSAyMjIwMSwgVVNB",
         "num_people": 0,
-        "description": 'Rotating menu of seasonal American dishes alongside international wines in an upscale setting.'
+        "description": 'Rotating menu of seasonal American dishes alongside international wines in an upscale setting.',
+        "review": "Not a lunch spot for vegetarians. Very limited menu. Not being a fan of mushrooms, the only choices were fried pimento cheese balls and a salad of mixed greens with a few slivers of radish (I passed on the raw onions). My friends enjoyed their bacon burgers (the bacon is ground into the beef)."
     },
     {
         "title": 'Whole Food Markets',
@@ -81,7 +85,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": "ChIJYXu_IIa2t4kRuU7OdddDn3Q",
         "num_people": 2,
         "images": "<nav class=\"level\"><img src=\"images/omkar.png\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/max.jpg\" class=\"pal-headshot\">",
-        "description": 'Eco-minded chain with natural & organic grocery items, housewares & other products (most sell wine).'
+        "description": 'Eco-minded chain with natural & organic grocery items, housewares & other products (most sell wine).',
+        "review": "Whole Food Markets is a great place to buy orchids and amazing eggs, I love the beanstalk. My and my children go there all the time on Sundays and enojy the sunshine rising."
     },
     {
         "title": 'The Container Store',
@@ -93,7 +98,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": " ChIJYTziboa2t4kRUE7mZOR1bEo",
         "num_people": 2,
         "images": "<nav class=\"level\"><img src=\"images/qt.jpg\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/omkar.png\" class=\"pal-headshot\">",
-        "description": 'Chain retailer specializing in storage & organization supplies, including closet & shelving systems.'
+        "description": 'Chain retailer specializing in storage & organization supplies, including closet & shelving systems.',
+        "review": "Today I went to the Container Store, it's a big big store with ocntainers and lots oflobsters to eat with crabs and i loved it."
     },
     {
         "title": 'Mr Tire Auto Service Centers',
@@ -104,7 +110,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.13244750000001,
         "place_id": "ChIJ48ZQt0y0t4kRFzUGTP-yH34",
         "num_people": 0,
-        "description": 'Great autoservices for your car'
+        "description": 'Great autoservices for your car',
+        "review": "This one time I had a flat tire and these bastards couldn't fix my tire. In fact, they amde all my tires flat!"
     },
     {
         "title": 'Arlington Rooftop Bar & Grill',
@@ -115,7 +122,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.0881602,
         "place_id": "ChIJR-yfSoi2t4kRasSlSd4RHho",
         "num_people": 0,
-        "description": 'Sprawling bar & grill with an upscale pub menu, signature cocktails, TV sports & live music.'
+        "description": 'Sprawling bar & grill with an upscale pub menu, signature cocktails, TV sports & live music.',
+        "review": "When I went to this place, I just wanted to be full, I love this place, I love the food, and I love the people. Goddamn this place."
     },
     {
         "title": 'Cava Mezze Clarendon',
@@ -127,7 +135,8 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "place_id": 'ChIJ5Y-6fYa2t4kRPcvWjkDJoTU',
         "num_people": 3,
         "images": "<nav class=\"level\"><img src=\"images/amy.jpg\" class=\"pal-headshot\"><nav class=\"level\"><img src=\"images/anon.jpg\" class=\"pal-headshot\">",
-        "description": 'Mini-chain branch for tapas-style Greek dining, serving up classic eats in an industrial setting.'
+        "description": 'Mini-chain branch for tapas-style Greek dining, serving up classic eats in an industrial setting.',
+        "review": "I like to eat at Cava because it's really good and fulfilling to eat here. Kyle loves to eat here."
     },
 
 
