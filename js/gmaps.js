@@ -174,16 +174,6 @@ function sidebar() {
     var description =  markers[element].description;
     var badge = document.createElement('div');
 
-    // badge.innerHTML = 
-    // '<div class="info-panel-overview">' +
-    // '<div class="row">' +
-    // ' <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div>'
-    // ' <div class="col-sm-8"> <div class="info-panel-title">' +
-    // title + '</div>  <p>' + description + '<p>'
-
-    // +  '</p> </div>' +
-    // ' </div>' +
-    // '</div>';
 
     badge.innerHTML =
     '<div class="info-panel-overview"> <div class="row"> <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div> <div class="col-sm-8"> <p><div class="info-panel-title">' + title + '</div> ' + description + '</div></div></div>';
