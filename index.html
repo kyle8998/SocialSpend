@@ -2,43 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>social spend</title>
-
-    <!--for scaling across various devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Set the color for the URL bar on Chrome on Android phones/tablets-->
-    <meta name="theme-color" content="#22313F">
+    <title>Social Spend</title>
 
     <!--stylesheet-->
-    <link rel="stylesheet" type="text/css" href="styles.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!--javascript-->
-    <script type="text/javascript" src="app.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
 
-    <div class="columns">
-        <div class="column is-three-quarters map-panel">
-            <!-- <section class="hero is-success is-fullheight">
-              <div class="hero-body">
-                <div class="container"> -->
-                    <section style="height: 40em" id="map"></section>
-                <!-- </div>
-              </div>
-            </section> -->
-        </div>
+     <div class="row">
+        <div class="info-panel-back-map">
+            <div class="col-sm-8">
+                    <section style="height: 100%; width: 100%;" id="map"></section>
+            </div>
 
-        <div class="column info-panel">
-          Info Panel
+        <div class="col-sm-4">
+                <div class="info-panel-back">
+
+            <div class="info-panel">
+
+                <div class="info-panel-overview">
+                    <div class="row">
+
+                        <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div>
+                        <div class="col-sm-8">
+                          <div class="info-panel-description">
+                        Description
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="info-panel-overview">
+                    <div class="row">
+                        <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div>
+                        <div class="col-sm-8">Description</div>
+                    </div>
+                </div>
+
+
+            </div>
+                </div>
+
+
         </div>
     </div>
 
 </body>
 </html>
 
+
 <script src="js/gmaps.js"></script>
+
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFW1D1pXRv2vC52u-bGJ3IydUM_-DepUE&callback=initMap">
 </script>
