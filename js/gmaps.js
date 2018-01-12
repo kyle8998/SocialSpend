@@ -191,7 +191,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
                       document.getElementById('place-address').innerHTML = data['address']
                       document.getElementById('place-phone').innerHTML = data['phone']
                       document.getElementById('place-website').innerHTML = data['website']
-                      document.getElementById('place-num-of-friends').innerHTML = data['num_people']
+                      document.getElementById('place-review').innerHTML = data['review']
                     }
 
                  });
