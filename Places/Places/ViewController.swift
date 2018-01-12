@@ -24,6 +24,20 @@ import UIKit
 
 import CoreLocation
 import MapKit
+import Firebase
+import FirebaseDatabase
+import FirebaseAuth
+
+class Friend {
+  var stores: [Store]?
+  var name: String?
+
+}
+
+class Store{
+  var name: String?
+  var transactions: [String:String]?
+}
 
 class ViewController: UIViewController {
   
@@ -33,14 +47,31 @@ class ViewController: UIViewController {
   var arViewController: ARViewController!
   var startedLoadingPOIs = false
   
+  var friends: [Friend] = []
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    print("hello")
     locationManager.delegate = self
     locationManager.desiredAccuracy = kCLLocationAccuracyBest
     locationManager.startUpdatingLocation()
     locationManager.requestWhenInUseAuthorization()
     mapView.userTrackingMode = MKUserTrackingMode.followWithHeading
+    
+    var ref = Database.database().reference()
+  
+      let userID = Auth.auth().currentUser?.uid
+      ref.child("friends").observeSingleEvent(of: .value, with: { (snapshot) in
+        print(snapshot.value)
+        
+        
+        
+        // ...
+      }) { (error) in
+        print(error.localizedDescription)
+      }
+    
+    
   }
   
   override func didReceiveMemoryWarning() {
@@ -66,6 +97,7 @@ class ViewController: UIViewController {
   }
   
   func showInfoView(forPlace place: Place) {
+    //pop up
     let alert = UIAlertController(title: place.placeName , message: place.infoText, preferredStyle: UIAlertControllerStyle.alert)
     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
     

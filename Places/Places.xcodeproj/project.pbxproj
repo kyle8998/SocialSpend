@@ -29,7 +29,9 @@
 		8FFCD7D21DC4A539009E3855 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D11DC4A539009E3855 /* Place.swift */; };
 		8FFCD7D41DC4A85B009E3855 /* PlacesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D31DC4A85B009E3855 /* PlacesLoader.swift */; };
 		8FFCD7D61DC608FE009E3855 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */; };
-		CF9061FC2007D65700F9B8BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF9061FB2007D65700F9B8BE /* GoogleService-Info.plist */; };
+		CF5CF8232007F17400ED9D10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF5CF8222007F17400ED9D10 /* GoogleService-Info.plist */; };
+		CF5CF8252008165F00ED9D10 /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5CF8242008165F00ED9D10 /* Store.storyboard */; };
+		CF5CF8272008292500ED9D10 /* navneeth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF5CF8262008292400ED9D10 /* navneeth.jpeg */; };
 		E17A3F38C8A0A7EDBCFC155F /* Pods_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39D5E502D880377DAE632F6B /* Pods_Places.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +63,9 @@
 		8FFCD7D31DC4A85B009E3855 /* PlacesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesLoader.swift; sourceTree = "<group>"; };
 		8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 		C41CC333EACC6416A81074AA /* Pods-Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Places.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Places/Pods-Places.debug.xcconfig"; sourceTree = "<group>"; };
-		CF9061FB2007D65700F9B8BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF5CF8222007F17400ED9D10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF5CF8242008165F00ED9D10 /* Store.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Store.storyboard; sourceTree = "<group>"; };
+		CF5CF8262008292400ED9D10 /* navneeth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = navneeth.jpeg; path = ../../../../../Archived/copy/SocialSpend/Places/Places/navneeth.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +107,15 @@
 			isa = PBXGroup;
 			children = (
 				8FFCD7A01DC4A204009E3855 /* AppDelegate.swift */,
+				CF5CF8242008165F00ED9D10 /* Store.storyboard */,
 				8FFCD7A21DC4A204009E3855 /* ViewController.swift */,
 				8FFCD7D11DC4A539009E3855 /* Place.swift */,
 				8F7404861DCF8834009A6F0B /* AnnotationView.swift */,
 				8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */,
+				CF5CF8262008292400ED9D10 /* navneeth.jpeg */,
 				8FFCD7D31DC4A85B009E3855 /* PlacesLoader.swift */,
-				CF9061FB2007D65700F9B8BE /* GoogleService-Info.plist */,
 				8FFCD7A41DC4A204009E3855 /* Main.storyboard */,
+				CF5CF8222007F17400ED9D10 /* GoogleService-Info.plist */,
 				8FFCD7B21DC4A39A009E3855 /* HDAugmentedReality */,
 				8FFCD7A71DC4A204009E3855 /* Assets.xcassets */,
 				8FFCD7A91DC4A204009E3855 /* LaunchScreen.storyboard */,
@@ -242,8 +248,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5CF8272008292500ED9D10 /* navneeth.jpeg in Resources */,
 				8FFCD7AB1DC4A204009E3855 /* LaunchScreen.storyboard in Resources */,
-				CF9061FC2007D65700F9B8BE /* GoogleService-Info.plist in Resources */,
+				CF5CF8232007F17400ED9D10 /* GoogleService-Info.plist in Resources */,
+				CF5CF8252008165F00ED9D10 /* Store.storyboard in Resources */,
 				8FFCD7C71DC4A39A009E3855 /* hdar_close.png in Resources */,
 				8FFCD7C91DC4A39A009E3855 /* hdar_close@3x.png in Resources */,
 				8FFCD7A81DC4A204009E3855 /* Assets.xcassets in Resources */,
@@ -263,12 +271,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Places/Pods-Places-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
