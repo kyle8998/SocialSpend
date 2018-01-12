@@ -28,6 +28,17 @@ import Firebase
 import FirebaseDatabase
 import FirebaseAuth
 
+class Friend {
+  var stores: [Store]?
+  var name: String?
+
+}
+
+class Store{
+  var name: String?
+  var transactions: [String:String]?
+}
+
 class ViewController: UIViewController {
   
   fileprivate var places = [Place]()
@@ -35,6 +46,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var mapView: MKMapView!
   var arViewController: ARViewController!
   var startedLoadingPOIs = false
+  
+  var friends: [Friend] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -50,7 +63,7 @@ class ViewController: UIViewController {
       let userID = Auth.auth().currentUser?.uid
       ref.child("friends").observeSingleEvent(of: .value, with: { (snapshot) in
         print(snapshot.value)
-    
+        
         
         
         // ...
