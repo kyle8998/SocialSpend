@@ -48,7 +48,7 @@ function addNewTransaction(id, attr, newTransaction){
 }
 
 // Function to find the amount of people who have recently been somewhere
-module.exports.findPeople =
+//module.exports.findPeople =
 function findPeople(place){
     var result = 0
     readUserData().then(function(results){
@@ -66,7 +66,7 @@ function findPeople(place){
     })
     return result
 }
-//findPeople("Cava Mezze Clarendon")
+findPeople("Cava Mezze Clarendon")
 /*
 writeUserData('1839402344', {
     "Starbucks":{

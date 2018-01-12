@@ -17,13 +17,15 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lat": 38.8870,
         "lng": -77.0944,
         "place_id": "ChIJVz9MKIS2t4kRoYbQXABqYzQ",
+        "num_people": 0,
         "description": 'Aksa Beach is a popular beach and a vacation spot in Aksa village at Malad, Mumbai.'
     },
     {
-        "title": 'Giant Foods',
+        "title": 'Giant Food',
         "lat": 38.8856536,
         "lng": -77.10297880000002,
         "place_id": "ChIJmXMR0ym0t4kRNT_fHDYv6xg",
+        "num_people": 2,
         "description": 'Juhu Beach is one of favourite tourist attractions situated in Mumbai.'
     },
     {
@@ -31,6 +33,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lat": 38.8853862,
         "lng": -77.09520709999998,
         "place_id": "ChIJG_qeQIS2t4kRtvKx8qLclBs",
+        "num_people": 3,
         "description": 'Girgaum Beach commonly known as just Chaupati is one of the most famous public beaches in Mumbai.'
     },
     {
@@ -38,6 +41,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lat": 38.8856541,
         "lng": -77.09261170000002,
         "place_id": "ChIJi8J3wIW2t4kR8hSSyF7i6xE",
+        "num_people": 1,
         "description": 'Jijamata Udyan is situated near Byculla station is famous as Mumbai (Bombay) Zoo.'
     },
     {
@@ -45,6 +49,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lat": 38.8879346,
         "lng": -77.09348239999997,
         "place_id": "EiVXaWxzb24gQmx2ZCwgQXJsaW5ndG9uLCBWQSAyMjIwMSwgVVNB",
+        "num_people": 0,
         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
     },
     {
@@ -52,6 +57,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lat": 38.88924,
         "lng": -77.09089599999999,
         "place_id": "ChIJYXu_IIa2t4kRuU7OdddDn3Q",
+        "num_people": 2,
         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
     },
     {
@@ -59,6 +65,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lat": 38.8875227,
         "lng": -77.09207229999998,
         "place_id": " ChIJYTziboa2t4kRUE7mZOR1bEo",
+        "num_people": 2,
         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
     },
     {
@@ -66,6 +73,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lat": 38.8960347,
         "lng": -77.13244750000001,
         "place_id": "ChIJ48ZQt0y0t4kRFzUGTP-yH34",
+        "num_people": 0,
         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
     },
     {
@@ -73,6 +81,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lat": 38.8902773,
         "lng": -77.0881602,
         "place_id": "ChIJR-yfSoi2t4kRasSlSd4RHho",
+        "num_people": 0,
         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
     },
     {
@@ -80,6 +89,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lat": 38.8902773,
         "lng": -77.0881602,
         "place_id": 'ChIJ5Y-6fYa2t4kRPcvWjkDJoTU',
+        "num_people": 3,
         "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
     },
 
@@ -120,7 +130,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
                  google.maps.event.addListener(marker, "click", function (e) {
                      //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
 
-                     //infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + findPeople(data.title) + " Friends were here recently!</div>");
+                     infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.num_people + " Friends were here recently!</div>");
                      infoWindow.open(map, marker);
 
                  });
