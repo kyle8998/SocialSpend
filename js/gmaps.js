@@ -1,3 +1,5 @@
+//const findPeople = require('../data/firebase_push.js').findPeople
+
 var map;
 var sf = {lat: 37.7749, lng: -122.4194};
 
@@ -118,7 +120,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
                  google.maps.event.addListener(marker, "click", function (e) {
                      //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
 
-                     infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                     //infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + findPeople(data.title) + " Friends were here recently!</div>");
                      infoWindow.open(map, marker);
 
                  });

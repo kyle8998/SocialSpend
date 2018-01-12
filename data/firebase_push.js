@@ -19,12 +19,13 @@ function writeUserData(id, transactions) {
 }
 
 // returns a Promise
-function readUserData(id){
-    return firebase.database().ref('/users/' + id).once('value').then(function(snapshot) {
+function readUserData(){
+    return firebase.database().ref('/users').once('value').then(function(snapshot) {
         var transactions = snapshot.val();
         return transactions
     });
 }
+//readUserData().then(function(results){console.log(results[0]['transactions'][0]['store'])})
 
 function updateUserData(id, newTransactions){
     let update = {}
@@ -45,6 +46,27 @@ function addNewTransaction(id, attr, newTransaction){
         updateUserData(id, results)
     })
 }
+
+// Function to find the amount of people who have recently been somewhere
+module.exports.findPeople =
+function findPeople(place){
+    var result = 0
+    readUserData().then(function(results){
+    var num_people = results.length
+    for (var i = 0; i < num_people; i++){
+    var num_transactions = results[i]['transactions'].length
+        for (var j = 0; j < num_transactions; j++) {
+            if (results[i]['transactions'][j]['store'] == place) {
+                result++
+            }
+        }
+    }
+    console.log(result)
+    //console.log(results[0]['transactions'][0]['store'])
+    })
+    return result
+}
+//findPeople("Cava Mezze Clarendon")
 /*
 writeUserData('1839402344', {
     "Starbucks":{
@@ -78,8 +100,8 @@ addNewTransaction('1839402344', 'Sotre', {
 })
 */
 const dummy_data = require('./dummy_data.js').dummy_data
-writeUserData('Kyle Lim', dummy_data['Kyle Lim'])
-writeUserData('Amy Zhao', dummy_data['Amy Zhao'])
-writeUserData('Max Newman', dummy_data['Max Newman'])
-writeUserData('Omkar Konaraddi', dummy_data['Omkar Konaraddi'])
-writeUserData('Melida Lehman', dummy_data['Melida Lehman'])
+// writeUserData('Kyle Lim', dummy_data['Kyle Lim'])
+// writeUserData('Amy Zhao', dummy_data['Amy Zhao'])
+// writeUserData('Max Newman', dummy_data['Max Newman'])
+// writeUserData('Omkar Konaraddi', dummy_data['Omkar Konaraddi'])
+// writeUserData('Melida Lehman', dummy_data['Melida Lehman'])
