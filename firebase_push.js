@@ -48,11 +48,20 @@ function addNewTransaction(index, newTransaction){
 // put dummy data on firebase
 const dummy_data = require('./dummy_data.js').dummy_data
 writeUserData(dummy_data)
+
 //deleteUserData(1)
+
 /*
 addNewTransaction(1, {
-    store: "Starbucks",
+    store: "Giant Food",
     amount: 18.52,
     time: "2018-01-12"
 })
 */
+
+//clear()
+function clear(){
+    for (let i = 0; i < dummy_data.length ; i++){
+        deleteUserData(i)
+    }
+}

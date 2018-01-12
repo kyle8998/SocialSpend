@@ -1,7 +1,7 @@
 module.exports.dummy_data = 
 [
     {
-        name: "Kyle Lim",    
+        name: "Kyle_Lim",    
         transactions: [
             {
                 store: "Starbucks",
@@ -26,7 +26,7 @@ module.exports.dummy_data =
         ]
     },
     {
-        name: "Amy Zhao",
+        name: "Amy_Zhao",
         transactions: [
             {
                 store: "Pizza Hut",
@@ -51,7 +51,7 @@ module.exports.dummy_data =
         ]
     },
     {
-        name: "Max Newman",
+        name: "Max_Newman",
         transactions: [
             {
                 store: "Panera",
@@ -81,7 +81,7 @@ module.exports.dummy_data =
         ]
     },
     {
-        name: "Omkar Konaraddi",
+        name: "Omkar_Konaraddi",
         transactions: [
             {
                 store: "Whole Food Markets",
@@ -96,7 +96,7 @@ module.exports.dummy_data =
         ]
     },
     {
-        name: "Melida Lehman",
+        name: "Melida_Lehman",
         transactions: [
             {
                 store: "Green Pig Bistro",
