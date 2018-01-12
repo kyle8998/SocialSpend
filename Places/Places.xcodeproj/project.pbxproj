@@ -29,6 +29,11 @@
 		8FFCD7D21DC4A539009E3855 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D11DC4A539009E3855 /* Place.swift */; };
 		8FFCD7D41DC4A85B009E3855 /* PlacesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D31DC4A85B009E3855 /* PlacesLoader.swift */; };
 		8FFCD7D61DC608FE009E3855 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */; };
+		CF3BC7E9200890CC00DDA17F /* Kyle_Lim.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF3BC7E8200890CC00DDA17F /* Kyle_Lim.jpeg */; };
+		CF3BC7EB2008937600DDA17F /* Amy_Zhao.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF3BC7EA2008937500DDA17F /* Amy_Zhao.jpeg */; };
+		CF3BC7EE20089CAB00DDA17F /* Max_Newman.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF3BC7EC20089CAB00DDA17F /* Max_Newman.jpeg */; };
+		CF3BC7EF20089CAB00DDA17F /* Omkar_Konaraddi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF3BC7ED20089CAB00DDA17F /* Omkar_Konaraddi.jpeg */; };
+		CF3BC7F12008A2C600DDA17F /* Melida_Lehman.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF3BC7F02008A2C500DDA17F /* Melida_Lehman.jpeg */; };
 		CF5CF8232007F17400ED9D10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF5CF8222007F17400ED9D10 /* GoogleService-Info.plist */; };
 		CF5CF8252008165F00ED9D10 /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5CF8242008165F00ED9D10 /* Store.storyboard */; };
 		CF5CF8272008292500ED9D10 /* navneeth.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF5CF8262008292400ED9D10 /* navneeth.jpeg */; };
@@ -63,6 +68,11 @@
 		8FFCD7D31DC4A85B009E3855 /* PlacesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesLoader.swift; sourceTree = "<group>"; };
 		8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 		C41CC333EACC6416A81074AA /* Pods-Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Places.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Places/Pods-Places.debug.xcconfig"; sourceTree = "<group>"; };
+		CF3BC7E8200890CC00DDA17F /* Kyle_Lim.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Kyle_Lim.jpeg; path = ../../../../../../Downloads/Kyle_Lim.jpeg; sourceTree = "<group>"; };
+		CF3BC7EA2008937500DDA17F /* Amy_Zhao.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Amy_Zhao.jpeg; path = ../../../../../../Downloads/Amy_Zhao.jpeg; sourceTree = "<group>"; };
+		CF3BC7EC20089CAB00DDA17F /* Max_Newman.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Max_Newman.jpeg; path = ../../../../../../Downloads/Max_Newman.jpeg; sourceTree = "<group>"; };
+		CF3BC7ED20089CAB00DDA17F /* Omkar_Konaraddi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Omkar_Konaraddi.jpeg; path = ../../../../../../Downloads/Omkar_Konaraddi.jpeg; sourceTree = "<group>"; };
+		CF3BC7F02008A2C500DDA17F /* Melida_Lehman.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Melida_Lehman.jpeg; path = ../../../../../../Desktop/Melida_Lehman.jpeg; sourceTree = "<group>"; };
 		CF5CF8222007F17400ED9D10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF5CF8242008165F00ED9D10 /* Store.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Store.storyboard; sourceTree = "<group>"; };
 		CF5CF8262008292400ED9D10 /* navneeth.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = navneeth.jpeg; path = ../../../../../Archived/copy/SocialSpend/Places/Places/navneeth.jpeg; sourceTree = "<group>"; };
@@ -110,9 +120,14 @@
 				CF5CF8242008165F00ED9D10 /* Store.storyboard */,
 				8FFCD7A21DC4A204009E3855 /* ViewController.swift */,
 				8FFCD7D11DC4A539009E3855 /* Place.swift */,
+				CF3BC7EA2008937500DDA17F /* Amy_Zhao.jpeg */,
+				CF3BC7F02008A2C500DDA17F /* Melida_Lehman.jpeg */,
 				8F7404861DCF8834009A6F0B /* AnnotationView.swift */,
 				8FFCD7D51DC608FE009E3855 /* PlaceAnnotation.swift */,
+				CF3BC7EC20089CAB00DDA17F /* Max_Newman.jpeg */,
+				CF3BC7ED20089CAB00DDA17F /* Omkar_Konaraddi.jpeg */,
 				CF5CF8262008292400ED9D10 /* navneeth.jpeg */,
+				CF3BC7E8200890CC00DDA17F /* Kyle_Lim.jpeg */,
 				8FFCD7D31DC4A85B009E3855 /* PlacesLoader.swift */,
 				8FFCD7A41DC4A204009E3855 /* Main.storyboard */,
 				CF5CF8222007F17400ED9D10 /* GoogleService-Info.plist */,
@@ -250,12 +265,17 @@
 			files = (
 				CF5CF8272008292500ED9D10 /* navneeth.jpeg in Resources */,
 				8FFCD7AB1DC4A204009E3855 /* LaunchScreen.storyboard in Resources */,
+				CF3BC7EF20089CAB00DDA17F /* Omkar_Konaraddi.jpeg in Resources */,
 				CF5CF8232007F17400ED9D10 /* GoogleService-Info.plist in Resources */,
 				CF5CF8252008165F00ED9D10 /* Store.storyboard in Resources */,
 				8FFCD7C71DC4A39A009E3855 /* hdar_close.png in Resources */,
+				CF3BC7E9200890CC00DDA17F /* Kyle_Lim.jpeg in Resources */,
 				8FFCD7C91DC4A39A009E3855 /* hdar_close@3x.png in Resources */,
+				CF3BC7EE20089CAB00DDA17F /* Max_Newman.jpeg in Resources */,
+				CF3BC7F12008A2C600DDA17F /* Melida_Lehman.jpeg in Resources */,
 				8FFCD7A81DC4A204009E3855 /* Assets.xcassets in Resources */,
 				8FFCD7A61DC4A204009E3855 /* Main.storyboard in Resources */,
+				CF3BC7EB2008937600DDA17F /* Amy_Zhao.jpeg in Resources */,
 				8FFCD7C81DC4A39A009E3855 /* hdar_close@2x.png in Resources */,
 				8FFCD7C61DC4A39A009E3855 /* DebugMapViewController.xib in Resources */,
 			);
@@ -463,6 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2QGZ85CE4S;
 				INFOPLIST_FILE = Places/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxwell.Places;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,6 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2QGZ85CE4S;
 				INFOPLIST_FILE = Places/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxwell.Places;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -28,7 +28,8 @@ import CoreLocation
  */
 open class ARViewController: UIViewController, ARTrackingManagerDelegate
 {
-    /// Data source
+  var stores = [String:[Friend]]()
+  /// Data source
     open weak var dataSource: ARDataSource?
     /// Orientation mask for view controller. Make sure orientations are enabled in project settings also.
     open var interfaceOrientationMask: UIInterfaceOrientationMask = UIInterfaceOrientationMask.all
@@ -166,7 +167,6 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
         self.maxVerticalLevel = 5
         self.maxVisibleAnnotations = 100
         self.maxDistance = 0
-        
         NotificationCenter.default.addObserver(self, selector: #selector(ARViewController.locationNotification(_:)), name: NSNotification.Name(rawValue: "kNotificationLocationSet"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ARViewController.appWillEnterForeground(_:)), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ARViewController.appDidEnterBackground(_:)), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
@@ -307,7 +307,7 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
      *
      *       - parameter annotations: Annotations
      */
-    open func setAnnotations(_ annotations: [ARAnnotation])
+    func setAnnotations(_ annotations: [Place])
     {
         var validAnnotations: [ARAnnotation] = []
         // Don't use annotations without valid location
@@ -315,6 +315,10 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
         {
             if annotation.location != nil && CLLocationCoordinate2DIsValid(annotation.location!.coordinate)
             {
+              if let friends = stores[annotation.placeName] {
+              // TODO: later... right now we need to fix the annotation view
+                annotation.friends = friends
+              }
                 validAnnotations.append(annotation)
             }
         }
@@ -379,6 +383,7 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
             else
             {
                 annotationView = self.dataSource?.ar(self, viewForAnnotation: annotation)
+              
             }
             
             if annotationView != nil
@@ -847,7 +852,7 @@ open class ARViewController: UIViewController, ARTrackingManagerDelegate
             let annotations = self.dataSource?.ar?(self, shouldReloadWithLocation: didUpdateReloadLocation!)
             if let annotations = annotations
             {
-                setAnnotations(annotations);
+              setAnnotations(annotations as! [Place]);
             }
         }
         else

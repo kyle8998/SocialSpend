@@ -29,14 +29,43 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class Friend {
-  var stores: [Store]?
-  var name: String?
+  let trans: [Transaction]?
+  let name: String
 
+  convenience init?(json: [String: Any]){
+    guard let name = json["name"] as? String, let transactions = json["transactions"] as? [[String: Any]] else { return nil }
+    self.init(name: name, transactions: transactions)
+  }
+  
+  init(name: String, transactions: [[String:Any]]) {
+    self.name = name
+    var array = [Transaction]()
+    for trans in transactions{
+      array.append(Transaction(json:trans)!)
+    }
+    self.trans = array
+  }
+  
 }
 
-class Store{
-  var name: String?
-  var transactions: [String:String]?
+class Transaction{
+  let storeName: String
+  let amount: Double
+  let time: String
+  
+  convenience init?(json: [String: Any]){
+    
+      guard let storeName = json["store"] as? String, let amount = json["amount"] as? Double, let time = json["time"] as?String else { return nil }
+    
+    print(storeName, amount, time)
+    self.init(storeName: storeName, amount: amount, time: time)
+  }
+  
+  init(storeName: String, amount: Double, time: String) {
+    self.storeName = storeName
+    self.amount = amount
+    self.time = time
+  }
 }
 
 class ViewController: UIViewController {
@@ -47,8 +76,8 @@ class ViewController: UIViewController {
   var arViewController: ARViewController!
   var startedLoadingPOIs = false
   
-  var friends: [Friend] = []
-  
+//  var friends = [Friend]()
+  var stores = [String:[Friend]]()
   override func viewDidLoad() {
     super.viewDidLoad()
     print("hello")
@@ -61,11 +90,30 @@ class ViewController: UIViewController {
     var ref = Database.database().reference()
   
       let userID = Auth.auth().currentUser?.uid
-      ref.child("friends").observeSingleEvent(of: .value, with: { (snapshot) in
-        print(snapshot.value)
-        
-        
-        
+      ref.child("users").observeSingleEvent(of: .value, with: { (snapshot) in
+        DispatchQueue.main.async {
+          let users = snapshot.value as? [[String: Any]]
+          
+          for user in users! {
+            if let friend = Friend(json: user) {
+//              self.friends.append(friend)
+              for transaction in friend.trans! {
+                if var friendsArray = self.stores[transaction.storeName] {
+                  friendsArray.append(friend)
+                  self.stores[transaction.storeName] = friendsArray
+                } else {
+                  self.stores[transaction.storeName] = [friend]
+                }
+              }
+            }
+          }
+        }
+//        for friend in self.friends{
+//          for transaction in friend.trans!{
+//            self.stores[transaction.storeName]?.append(friend)
+//          }
+//        }
+       
         // ...
       }) { (error) in
         print(error.localizedDescription)
@@ -89,9 +137,10 @@ class ViewController: UIViewController {
     
     arViewController.trackingManager.userDistanceFilter = 25
     arViewController.trackingManager.reloadDistanceFilter = 75
-    arViewController.setAnnotations(places)
     arViewController.uiOptions.debugEnabled = false
     arViewController.uiOptions.closeButtonEnabled = true
+    arViewController.stores = stores
+    arViewController.setAnnotations(places)
     
     self.present(arViewController, animated: true, completion: nil)
   }
