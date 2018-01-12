@@ -54,7 +54,7 @@ writeUserData(dummy_data)
 /*
 addNewTransaction(1, {
     store: "Giant Food",
-    amount: 18.52,
+    amount: 10.52,
     time: "2018-01-12"
 })
 */
