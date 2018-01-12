@@ -168,28 +168,27 @@ function initMap() {
 
 // Get default info bar 
 function sidebar() {
- for (var element in markers) {
+   for (var element in markers) {
 
-  var title = markers[element].title;
-  var description =  markers[element].description;
-  var badge = document.createElement('div');
+    var title = markers[element].title;
+    var description =  markers[element].description;
+    var badge = document.createElement('div');
 
-  badge.innerHTML = 
-  '<div class="info-panel-overview">' +
-  '<div class="row">' +
-  ' <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div>'
-  ' <div class="col-sm-8"> <p>' +
-  title + '</p>  <p>' + description + '<p>'
+    badge.innerHTML = 
+    '<div class="info-panel-overview">' +
+    '<div class="row">' +
+    ' <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div>'
+    ' <div class="col-sm-8"> <div class="info-panel-title">' +
+    title + '</div>  <p>' + description + '<p>'
 
-  +  '</p> </div>' +
-  ' </div>' +
-  '</div>';
+    +  '</p> </div>' +
+    ' </div>' +
+    '</div>';
 
-
-  badge.innerHTML =
-  '<div class="info-panel-overview"> <div class="row"> <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div> <div class="col-sm-8"> <p>' + title + ' ' + description + '</div></div></div>';
-document.getElementById("element").appendChild(badge);
-}
+    badge.innerHTML =
+    '<div class="info-panel-overview"> <div class="row"> <div class="col-sm-4"> <img src="images/starbucks-logo.jpg" alt="..." class="img-fluid"> </div> <div class="col-sm-8"> <p>' + title + ' ' + description + '</div></div></div>';
+  document.getElementById("element").appendChild(badge);
+  }
 
 
 }
