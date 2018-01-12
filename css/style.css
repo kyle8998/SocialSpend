@@ -17,24 +17,39 @@ body {
 	box-shadow: 0 0 10px #5b5b5b;
 }
 
+.comp {
+	width: 100%;
+	padding-bottom: 2%;
+}
+
+.comp img {
+	width: 10%;
+	float: left;
+	padding: 4px;
+}
+
 .info-panel-back-map {
 	background-color: white;
-		height: 97%;
+		height: 100%;
 		width: 100%;
+	overflow-y:hidden;
+	overflow-x:hidden;
 }
 
 .info-panel-back {
 	background-color: white;
-	height: 97%;
+	height: 100%;
 	margin: 0;
 	width: 100%;
 	overflow-y: scroll;
+	overflow-x:hidden;
 }
 
 .info-panel {
 	background-color: white;
 	padding: 0.01%;
 	margin: 0;
+	
 }
 
 .info-panel-overview {
