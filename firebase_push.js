@@ -2,12 +2,12 @@ var firebase = require("firebase");
 
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyC9b7MUs4fWFi4yXj1_JAdTIiB9nrexpx4",
-    authDomain: "socialspend-test.firebaseapp.com",
-    databaseURL: "https://socialspend-test.firebaseio.com",
-    projectId: "socialspend-test",
-    storageBucket: "socialspend-test.appspot.com",
-    messagingSenderId: "1064956290480"
+    apiKey: "AIzaSyCJKvhuv1aLwLu2dfeLxzGlPnkvaV1koAk",
+    authDomain: "socialspend-191815.firebaseapp.com",
+    databaseURL: "https://socialspend-191815.firebaseio.com",
+    projectId: "socialspend-191815",
+    storageBucket: "socialspend-191815.appspot.com",
+    messagingSenderId: "327321627172"
 };
 firebase.initializeApp(config);
 
@@ -77,3 +77,9 @@ addNewTransaction('1839402344', 'Sotre', {
     "2018-19-01-12:34": 61
 })
 */
+const dummy_data = require('./dummy_data.js').dummy_data
+writeUserData('Kyle Lim', dummy_data['Kyle Lim'])
+writeUserData('Amy Zhao', dummy_data['Amy Zhao'])
+writeUserData('Max Newman', dummy_data['Max Newman'])
+writeUserData('Omkar Konaraddi', dummy_data['Omkar Konaraddi'])
+writeUserData('Melida Lehman', dummy_data['Melida Lehman'])
