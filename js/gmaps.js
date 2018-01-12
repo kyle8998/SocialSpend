@@ -18,7 +18,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.0944,
         "place_id": "ChIJVz9MKIS2t4kRoYbQXABqYzQ",
         "num_people": 0,
-        "description": 'Aksa Beach is a popular beach and a vacation spot in Aksa village at Malad, Mumbai.'
+        "description": 'New American bistro with creative fare, an active bar scene & outdoor seating.'
     },
     {
         "title": 'Giant Food',
@@ -26,7 +26,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
         "lng": -77.10297880000002,
         "place_id": "ChIJmXMR0ym0t4kRNT_fHDYv6xg",
         "num_people": 2,
-        "description": 'Juhu Beach is one of favourite tourist attractions situated in Mumbai.'
+        "description": 'American supermarket chain with 169 stores and 159 full service pharmacies located in Delaware, Maryland, Pennsylvania, Virginia, and Washington, D.C'
     },
     {
         "title": 'Lyon Hall',
@@ -132,7 +132,7 @@ var sf = {lat: 37.7749, lng: -122.4194};
 
                      infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.num_people + " Friends were here recently!</div>");
                      infoWindow.open(map, marker);
-                     
+
                      document.getElementById('place-title').innerHTML = markers[i]['title'];
 
                  });
